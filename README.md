@@ -2,6 +2,8 @@
 
 A Godot addon that converts `SpriteFrames` animations into usable `Texture2D` resources. Use animated sprites anywhere textures are accepted—UI elements, materials, shaders, draw calls, and nested within other animated textures. **Plug-and-play**: simply drop it into your project and it works immediately.
 
+[![View video](https://img.youtube.com/vi/jq-kXXF9kVs/0.jpg)](https://www.youtube.com/watch?v=jq-kXXF9kVs)
+
 ## Features
 
 🟢 **Universal Texture Support** - Use animated sprites anywhere `Texture2D` is accepted (Sprite2D, TextureRect, Button icons, materials, shaders, etc.)

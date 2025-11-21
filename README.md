@@ -207,43 +207,43 @@ reset() -> void
 
 ## Troubleshooting
 
-### Texture doesn't appear?
+### 🔴 Texture doesn't appear?
 
-❌ Verify `sprite_frames` is assigned
+- Verify `sprite_frames` is assigned
 
-❌ Check that `animation` name exists in the SpriteFrames resource
+- Check that `animation` name exists in the SpriteFrames resource
 
-❌ Confirm `playing` is set to `true`
+- Confirm `playing` is set to `true`
 
-❌ Check the node is visible in the scene tree
+- Check the node is visible in the scene tree
 
-### Animation not updating?
+### 🔴 Animation not updating?
 
-❌ Ensure `sprite_frames` is a valid, loaded resource
+- Ensure `sprite_frames` is a valid, loaded resource
 
-❌ Verify the animation loop/duration settings in SpriteFrames
+- Verify the animation loop/duration settings in SpriteFrames
 
-❌ Try calling `reset()` to reinitialize the animation state
+- Try calling `reset()` to reinitialize the animation state
 
-### Performance issues?
+### 🔴 Performance issues?
 
-❌ Reduce the number of simultaneous animated textures
+- Reduce the number of simultaneous animated textures
 
-❌ Lower animation speed with `speed_scale`
+- Lower animation speed with `speed_scale`
 
-❌ Stop animations for off-screen elements
+- Stop animations for off-screen elements
 
-❌ Use simpler sprite atlases with fewer frames
+- Use simpler sprite atlases with fewer frames
 
-### Nested textures not working?
+### 🔴 Nested textures not working?
 
-❌ Ensure inner texture is a valid `SpritesetAnimationTexture`
+- Ensure inner texture is a valid `SpritesetAnimationTexture`
 
-❌ Check that inner texture has `sprite_frames` assigned
+- Check that inner texture has `sprite_frames` assigned
 
-❌ Verify nesting depth is 7 levels or less
+- Verify nesting depth is 7 levels or less
 
-❌ Confirm inner animation names are valid
+- Confirm inner animation names are valid
 
 ## Architecture Notes
 

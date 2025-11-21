@@ -182,55 +182,6 @@ reset() -> void
 
 ✅ Monitor frame rate: Very complex nested animations on many sprites may impact performance—profile your specific use case
 
-## Advanced Features
-
-### Frame-by-Frame Control
-
-```gdscript
-# Manually control frame display without autoplay
-anim_tex.playing = false
-anim_tex.set_frame(5)  # Jump to frame 5
-anim_tex.set_frame((anim_tex.current_frame + 1) % anim_tex.get_frame_count())  # Next frame
-```
-
-### Dynamic Speed Control
-
-```gdscript
-# Speed up or slow down playback in real-time
-anim_tex.speed_scale = 0.5   # Half speed
-anim_tex.speed_scale = 2.0   # Double speed
-anim_tex.speed_scale = 0.1   # Very slow motion
-```
-
-### Animation State Synchronization
-
-```gdscript
-# Respond to animation events
-anim_tex.frame_changed.connect(func():
-	print("Frame: ", anim_tex.current_frame)
-)
-
-anim_tex.animation_finished.connect(func(anim_name: String):
-	print("Animation '%s' finished" % anim_name)
-	anim_tex.animation = "next_animation"
-)
-```
-
-### Composite Animations
-
-```gdscript
-# Layer multiple animated textures for complex effects
-var background = SpritesetAnimationTexture.new()
-background.sprite_frames = preload("res://animations/bg.tres")
-background.animation = "scroll"
-
-var foreground = SpritesetAnimationTexture.new()
-foreground.sprite_frames = preload("res://animations/fg.tres")
-foreground.animation = "parallax"
-
-$Background.texture = background
-$Foreground.texture = foreground
-```
 
 ## Editor Support
 

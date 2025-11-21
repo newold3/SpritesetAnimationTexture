@@ -28,7 +28,7 @@ A Godot addon that converts `SpriteFrames` animations into usable `Texture2D` re
 your_project/
 └── addons/
     └── AnimateTexture/
-        ├── plugin.cfg
+        ├── icon.png
         └── spriteset_animation_texture.gd
 ```
 
